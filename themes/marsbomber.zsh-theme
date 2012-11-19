@@ -18,4 +18,4 @@ else
   RPS1='$(git_custom_status) $EPS1'
 fi
 
-PROMPT='%{$fg[cyan]%}%~ % %(?.%{$fg[green]%}.%{$fg[red]%})%B⚡%b '
+PROMPT='%{$fg[cyan]%}%~ % %(?.%{$fg[green]%}%B✔.%{$fg[red]%}%B✘)%b '
