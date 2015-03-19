@@ -11,11 +11,6 @@ git_custom_status() {
   fi
 }
 
-#RVM and git settings
-if [[ -s ~/.rvm/scripts/rvm ]] ; then 
-  RPS1='$(git_custom_status)%{$fg[red]%}[`~/.rvm/bin/rvm-prompt`]%{$reset_color%} $EPS1'
-else
-  RPS1='$(git_custom_status) $EPS1'
-fi
+RPS1='$(git_custom_status) $EPS1'
 
 PROMPT='%{$fg[cyan]%}%~ % %(?.%{$fg[green]%}%B✔.%{$fg[red]%}%B✘)%b '
